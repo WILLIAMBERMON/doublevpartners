@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "6da2a58f-7007-4eaf-8044-741edd9684aa",
+		"name": "api rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear_ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "miguel",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear_ticket_g",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/crear?usuario=william",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"crear"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "william"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar_ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pagina",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "limite",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar_ticket_g",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/listar?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"listar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar_ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "default"
+						},
+						{
+							"key": "usuario",
+							"value": "lyan",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar_ticket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:10000/Ticket/eliminar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10000",
+					"path": [
+						"Ticket",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
